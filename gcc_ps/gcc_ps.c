@@ -23,7 +23,7 @@ int main() {
 
     while ((entry = readdir(dir)) != NULL) {   //   /proc에 존재하는 파일들을 차례대로 읽습니다.
         lstat(entry->d_name, &fileStat);          // DIR*가 가리키는 파일의 state 정보를 가져온다.
-  
+
       if (!S_ISDIR(fileStat.st_mode))            // is dir? 디렉토리인지 확인한다.
              continue;                                    // 프로세스는 /proc에 자신의 pid로 디렉토리를
                                                               // 만드는 점을 안다면 이해하실거라 생각합니다.
