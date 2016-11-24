@@ -6,107 +6,49 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>946</width>
-    <height>679</height>
+    <width>335</width>
+    <height>260</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label_bkImg">
+   <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>130</y>
-      <width>291</width>
-      <height>191</height>
+      <x>10</x>
+      <y>20</y>
+      <width>301</width>
+      <height>111</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>67</width>
+      <height>17</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../Desktop/backImg.png</pixmap>
+     <string>공지사항</string>
     </property>
    </widget>
-   <widget class="QGroupBox" name="groupBox">
+   <widget class="QPushButton" name="connectButton">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>380</y>
-      <width>271</width>
-      <height>201</height>
+      <x>110</x>
+      <y>160</y>
+      <width>99</width>
+      <height>27</height>
      </rect>
     </property>
-    <property name="title">
-     <string>sign in</string>
+    <property name="text">
+     <string>접속</string>
     </property>
-    <widget class="QPushButton" name="pushButton">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>140</y>
-       <width>211</width>
-       <height>27</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>211</width>
-       <height>27</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>211</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>Login</string>
-     </property>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>40</y>
-       <width>213</width>
-       <height>91</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QLabel" name="label">
-          <property name="text">
-           <string>usernumber</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_usernum"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <widget class="QLabel" name="label_2">
-          <property name="text">
-           <string>password</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_password"/>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -114,7 +56,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>946</width>
+     <width>335</width>
      <height>25</height>
     </rect>
    </property>
