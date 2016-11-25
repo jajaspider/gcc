@@ -10,7 +10,6 @@ int main()
 	pid = fork();
 	if(pid == 0)
 	{
-//		execl("/bin/ls","ls","-l", (char*)0);
 		execl("/sbin/shutdown","shutdown","-r","1",NULL);
 		perror("execl failed");
 	}
