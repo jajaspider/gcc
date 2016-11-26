@@ -56,15 +56,39 @@ void MyThread::readyRead()
     }
     else{
         QByteArray Data= socket->readAll();
-        server->clientToServerDataList.replace(index, Data);
 
-        QByteArray noti;
-        Q_FOREACH (const QByteArray& s, server->notifyDataList) {
-            noti +=s+"\n";
+        //sanghwa,kwangmin edit start
+        QString temp;
+        temp = Data;
+        temp1 = temp.split(",");
+        QMessageBox msgBox;
+        qDebug() << temp1[0] << temp1[1] <<" log!";
+//        msgBox.setText(temp1[0]);
+//        msgBox.information(,temp1[0],temp1[1]);
+        if(temp1[0]=="log"){
+            file = new QFile;
+            QString filename = temp1[2]+".txt";
+            file->setFileName(filename);
+            file->open(QIODevice::ReadWrite|QIODevice::Append);
+            QByteArray logdata;
+            logdata.append(temp1[1]);
+            logdata.append(","+temp1[2]);
+            logdata.append(","+temp1[3]);
+            file->write(logdata);
+            file->close();
         }
-         qDebug()<<noti;
-        socket->write(server->serverToClientDataList.at(index)+"번 프로세스를 종료하겠습니다.\n"+noti);
-        server->serverToClientDataList.replace(index,"0");
+        //sanghwa,kwangmin edit end
+        else{
+            server->clientToServerDataList.replace(index, Data);
+
+            QByteArray noti;
+            Q_FOREACH (const QByteArray& s, server->notifyDataList) {
+                noti +=s+"\n";
+            }
+             qDebug()<<noti;
+            socket->write(server->serverToClientDataList.at(index)+"번 프로세스를 종료하겠습니다.\n"+noti);
+            server->serverToClientDataList.replace(index,"0");
+        }
     }
 
 }

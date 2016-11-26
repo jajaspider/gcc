@@ -5,6 +5,8 @@
 #include <QTcpSocket>
 #include <QDebug>
 #include <QMainWindow>
+#include <QMessageBox>
+#include <QFile>
 
 class MyServer;
 
@@ -32,7 +34,10 @@ private:
     QTcpSocket *socket;
     int socketDescriptor;
     quint16 nextBlockSize;
-
+    //sanghwa,kwangmin edit start
+    QFile *file;
+    QStringList temp1;
+    //sanghwa,kwangmin edit end
 };
 
 #endif // MYTHREAD_H
