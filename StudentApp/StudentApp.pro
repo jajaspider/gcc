@@ -1,20 +1,21 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2016-11-21T09:30:33
+# Project created by QtCreator 2016-11-26T14:13:18
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = StartEndDateTest
+TARGET = StudentApp
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
         mainwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    client.h
 
 FORMS    += mainwindow.ui
