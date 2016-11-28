@@ -27,7 +27,6 @@ void MainWindow::on_signin_clicked()
     //YYYYMMDD
     QDate *date = new QDate();
     QDate startDate = date->currentDate();
-    startDate.toString("yyyyMMdd");
     //HHmmss
     QDateTime *datetime = new QDateTime();
     QDateTime startTime = datetime->currentDateTime();
