@@ -67,7 +67,7 @@ void MyThread::readyRead()
 //        msgBox.information(,temp1[0],temp1[1]);
         if(temp1[0]=="log"){
             file = new QFile;
-            QString filename = temp1[2]+".txt";
+            filename = temp1[2]+".txt";
             file->setFileName(filename);
             file->open(QIODevice::ReadWrite|QIODevice::Append);
             QByteArray logdata;
@@ -94,6 +94,21 @@ void MyThread::readyRead()
 }
 void MyThread::disconnect()
 {
+    //sanghwa,kwangmin edit start
+    file->open(QIODevice::ReadWrite|QIODevice::Append);
+    QByteArray logenddata;
+    //YYYYMMDD
+    QDate *date = new QDate();
+    QDate endDate = date->currentDate();
+    //HHmmss
+    QDateTime *datetime = new QDateTime();
+    QDateTime endTime = datetime->currentDateTime();
+    logenddata.append(","+endDate.toString("yyyyMMdd")+endTime.toString("HHmmss")+"\n");
+
+    file->write(logenddata);
+    file->close();
+    //sanghwa,kwangmin edit end
+
     qDebug() <<socketDescriptor<<" Disconnected";
     socket->deleteLater();
 

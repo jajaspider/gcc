@@ -776,6 +776,8 @@ moc_mainwindow.cpp: ../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMainWindow \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmessagebox.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qdialog.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QFile \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QDate \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdatetime.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QtCore \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QtCoreDepends \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qabstractanimation.h \
@@ -799,7 +801,6 @@ moc_mainwindow.cpp: ../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMainWindow \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qcommandlineparser.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qcoreapplication.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qcryptographichash.h \
-		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdatetime.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdeadlinetimer.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qelapsedtimer.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdir.h \
@@ -1012,6 +1013,8 @@ moc_myserver.cpp: ../../../Qt5.8.0/5.8/gcc_64/include/QtNetwork/QTcpServer \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmessagebox.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qdialog.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QFile \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QDate \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdatetime.h \
 		../finalTeacherApp/myserver.h \
 		moc_predefs.h \
 		../../../Qt5.8.0/5.8/gcc_64/bin/moc
@@ -1134,6 +1137,8 @@ moc_mythread.cpp: ../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QThread \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmessagebox.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qdialog.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QFile \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QDate \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdatetime.h \
 		../finalTeacherApp/mythread.h \
 		moc_predefs.h \
 		../../../Qt5.8.0/5.8/gcc_64/bin/moc
@@ -1281,6 +1286,8 @@ main.o: ../finalTeacherApp/main.cpp ../finalTeacherApp/mainwindow.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmessagebox.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qdialog.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QFile \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QDate \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdatetime.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QtCore \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QtCoreDepends \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qabstractanimation.h \
@@ -1304,7 +1311,6 @@ main.o: ../finalTeacherApp/main.cpp ../finalTeacherApp/mainwindow.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qcommandlineparser.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qcoreapplication.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qcryptographichash.h \
-		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdatetime.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdeadlinetimer.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qelapsedtimer.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdir.h \
@@ -1521,6 +1527,8 @@ mainwindow.o: ../finalTeacherApp/mainwindow.cpp ../finalTeacherApp/mainwindow.h 
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmessagebox.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qdialog.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QFile \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QDate \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdatetime.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QtCore \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QtCoreDepends \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qabstractanimation.h \
@@ -1544,7 +1552,6 @@ mainwindow.o: ../finalTeacherApp/mainwindow.cpp ../finalTeacherApp/mainwindow.h 
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qcommandlineparser.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qcoreapplication.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qcryptographichash.h \
-		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdatetime.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdeadlinetimer.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qelapsedtimer.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdir.h \
@@ -1804,7 +1811,9 @@ myserver.o: ../finalTeacherApp/myserver.cpp ../finalTeacherApp/myserver.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QMessageBox \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmessagebox.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qdialog.h \
-		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QFile
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QFile \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QDate \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdatetime.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o myserver.o ../finalTeacherApp/myserver.cpp
 
 mythread.o: ../finalTeacherApp/mythread.cpp ../finalTeacherApp/myserver.h \
@@ -1929,6 +1938,8 @@ mythread.o: ../finalTeacherApp/mythread.cpp ../finalTeacherApp/myserver.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qmessagebox.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/qdialog.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QFile \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QDate \
+		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/qdatetime.h \
 		ui_mainwindow.h \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtCore/QVariant \
 		../../../Qt5.8.0/5.8/gcc_64/include/QtWidgets/QAction \

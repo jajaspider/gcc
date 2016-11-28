@@ -7,6 +7,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include <QFile>
+#include <QDate>
 
 class MyServer;
 
@@ -37,6 +38,7 @@ private:
     //sanghwa,kwangmin edit start
     QFile *file;
     QStringList temp1;
+    QString filename;
     //sanghwa,kwangmin edit end
 };
 
