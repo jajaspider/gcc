@@ -71,7 +71,7 @@ void MainWindow::readMessage(){
 
 void MainWindow::connectToServer(){
     //서버 연결 요청
-    tcpSocket.connectToHost("113.198.236.96", 9989);
+    tcpSocket.connectToHost("113.198.236.95", 9989);
 }
 
 void MainWindow::onConnectServer(){
