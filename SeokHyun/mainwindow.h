@@ -14,6 +14,12 @@
 #include <QTcpSocket>
 #include <QtCore>
 #include <dataclass.h>
+#include <QApplication>
+#include <QPixmap>
+#include <QDesktopWidget>
+#include <QImageWriter>
+#include <QScreen>
+
 using namespace std;
 
 typedef struct process_info
@@ -62,6 +68,7 @@ private slots:
     int dirIsDigit(char *); //디렉터리가 숫자인지 아닌지를 구분하는 함수
     QByteArray processData(); //데이터를 전송하기 위해 QByteArray로 만들어주는 함수
     QString processPid(int number); //프로세스 kill을 위해서 프로세스 리스트에서 Pid를 가져오는 함수
+    void on_screen_clicked();
 };
 
 #endif // MAINWINDOW_H

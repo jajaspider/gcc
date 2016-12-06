@@ -14,6 +14,7 @@
 #include "dialog.h"
 #include <qdebug.h>
 
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -43,6 +44,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(m_pTimer, SIGNAL(timeout()), this, SLOT(sendRequest()));
     m_pTimer->start(1000);
     pListSet();
+
 }
 
 //slots
@@ -280,4 +282,18 @@ QByteArray MainWindow::processData()
     }
     array.remove(0,1);
     return array;
+}
+
+void MainWindow::on_screen_clicked()
+{
+    //QString imgWriter ="./ScreenCapture.png";
+    QPixmap originalPixmap;
+    QScreen *screen = QGuiApplication::primaryScreen();
+    int screenNumber = qApp->desktop()->screenNumber(QCursor::pos());
+    QWidget *w = qApp->desktop()->screen(screenNumber);
+    originalPixmap = screen->grabWindow(QApplication::desktop()->winId(), w->x(), w->y(), w->width(), w->height());
+    //ui->label_2->setText(originalPixmap);
+    //originalPixmap.save(imgWriter,"png");
+    //ui->label_2->setPixmap(originalPixmap);
+   // ui->label_2->resize(originalPixmap.width(),originalPixmap.height());
 }
