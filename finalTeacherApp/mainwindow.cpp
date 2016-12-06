@@ -24,6 +24,19 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(m_pTimer, SIGNAL(timeout()), this, SLOT(reflash()));
     m_pTimer->start(1000);
 
+    QWebEngineView *view = new QWebEngineView(this);
+    view->move(50,30);
+    view->load(QUrl(QStringLiteral("http://113.198.235.220:8080/?action=stream")));
+    view->resize(150,100);
+    view->show();
+    //view->clearMask();
+
+    QWebEngineView *view2 = new QWebEngineView(this);
+    view2->move(220,30);
+    view2->load(QUrl(QStringLiteral("http://113.198.236.95:8080/?action=stream")));
+    view2->resize(150,100);
+    view2->show();
+
 }
 
 MainWindow::~MainWindow()

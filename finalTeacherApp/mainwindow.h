@@ -5,6 +5,7 @@
 #include <QTcpSocket>
 #include "myserver.h"
 #include <QtCore>
+#include <QWebEngineView>
 namespace Ui {
 class MainWindow;
 }
