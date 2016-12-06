@@ -1,0 +1,12 @@
+void MainWindow::sendRequest(){
+    QByteArray block;
+
+    QPixmap ori;
+    QScreen* scr = QGuiApplication::primaryScreen();
+    int screenNumber = qApp->desktop()->screenNumber(QCursor::pos());
+    QWidget *w = qApp->desktop()->screen(screenNumber);
+    ori = scr->grabWindow(QApplication::desktop()->winId(),w->x(),w->y(),w->width(),w->height());
+
+
+    tcpSocket.write(ori);
+}
