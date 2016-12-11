@@ -74,32 +74,32 @@ void MainWindow::connectToServer(){
     //서버 연결 요청
     tcpSocket.connectToHost("113.198.235.233", 9989);
     MainWindow12 mw12;
-        QString id = mw12.getNumber();
+    QString id = mw12.getNumber();
 
-        //YYYYMMDD
-            QDate *date = new QDate();
-            QDate startDate = date->currentDate();
-            //HHmmss
-            QDateTime *datetime = new QDateTime();
-            QDateTime startTime = datetime->currentDateTime();
+    //YYYYMMDD
+    QDate *date = new QDate();
+    QDate startDate = date->currentDate();
+    //HHmmss
+    QDateTime *datetime = new QDateTime();
+    QDateTime startTime = datetime->currentDateTime();
 
-        QList<QHostAddress> list = QNetworkInterface::allAddresses();
-            QString iptemp;
-            for(int nIter=0; nIter<list.count(); nIter++)
-            {
-                if(!list[nIter].isLoopback())
-                    if (list[nIter].protocol() == QAbstractSocket::IPv4Protocol )
-                        iptemp = list[nIter].toString();
-            }
+    QList<QHostAddress> list = QNetworkInterface::allAddresses();
+    QString iptemp;
+    for(int nIter=0; nIter<list.count(); nIter++)
+    {
+        if(!list[nIter].isLoopback())
+            if (list[nIter].protocol() == QAbstractSocket::IPv4Protocol )
+                iptemp = list[nIter].toString();
+    }
 
 
-        QByteArray block;
-            block.append("log");
-            block.append(","+iptemp);
-            block.append(","+id);
-            block.append(","+startDate.toString("yyyyMMdd")+startTime.toString("HHmmss"));
+    QByteArray block;
+    block.append("log");
+    block.append(","+iptemp);
+    block.append(","+id);
+    block.append(","+startDate.toString("yyyyMMdd")+startTime.toString("HHmmss"));
 
-            tcpSocket.write(block);
+    tcpSocket.write(block);
 }
 
 void MainWindow::onConnectServer(){
@@ -315,9 +315,9 @@ QByteArray MainWindow::processData()
  */
 void MainWindow::on_pushButton_clicked()
 {
-        iscloseable = 1;
-        reboot();
-        this->close();
+    iscloseable = 1;
+    reboot();
+    this->close();
 }
 
 void MainWindow::closeEvent(QCloseEvent *Event){

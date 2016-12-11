@@ -56,6 +56,7 @@ void MyThread::readyRead()
     }
     else{
         QByteArray Data= socket->readAll();
+
         server->clientToServerDataList.replace(index, Data);
 
         QByteArray noti;
