@@ -27,12 +27,15 @@ private:
     int spinboxnum3;
 
 private slots:
-
+   //프로세스 종료 버튼
     void sendButton1();
     void sendButton2();
     void sendButton3();
+    //공지하기 버튼
     void notify();
+    //화면갱신
     void reflash();
+    //재부팅 버튼
     void pushButton1();
     void pushButton2();
     void pushButton3();

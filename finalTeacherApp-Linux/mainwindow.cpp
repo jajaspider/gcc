@@ -18,8 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(pushButton1()));
     connect(ui->pushButton_2, SIGNAL(clicked()), this, SLOT(pushButton2()));
     connect(ui->pushButton_3, SIGNAL(clicked()), this, SLOT(pushButton3()));
-    //connect(ui->reflash, SIGNAL(clicked()), this, SLOT(reflash()));
-    // Timer
+
     m_pTimer = new QTimer(this);
     connect(m_pTimer, SIGNAL(timeout()), this, SLOT(reflash()));
     m_pTimer->start(1000);
@@ -79,7 +78,6 @@ void MainWindow::sendButton1()
         QByteArray num1;
         num1.setNum(spinboxnum1);
         server->serverToClientDataList.replace(0,num1);
-        //받은다음.spinboxnum을,0으로바꿔야한다.
     }
 }
 void MainWindow::sendButton2()
@@ -90,7 +88,6 @@ void MainWindow::sendButton2()
         QByteArray num2;
         num2.setNum(spinboxnum2);
         server->serverToClientDataList.replace(1,num2);
-        //받은다음.spinboxnum을,0으로바꿔야한다.
     }
 }
 void MainWindow::sendButton3()
@@ -101,7 +98,6 @@ void MainWindow::sendButton3()
         QByteArray num3;
         num3.setNum(spinboxnum3);
         server->serverToClientDataList.replace(2,num3);
-        //받은다음.spinboxnum을,0으로바꿔야한다.
     }
 
 }
@@ -111,7 +107,7 @@ void MainWindow::pushButton1()
     if(server->client_num >=1){
         QByteArray num1 = "1";
         server->exitDescriptList.replace(0,num1);
-        //받은다음.spinboxnum을,0으로바꿔야한다.
+
     }
 }
 
@@ -120,7 +116,6 @@ void MainWindow::pushButton2()
     if(server->client_num >=2){
         QByteArray num1 = "1";
         server->exitDescriptList.replace(1,num1);
-        //받은다음.spinboxnum을,0으로바꿔야한다.
     }
 }
 
@@ -129,6 +124,5 @@ void MainWindow::pushButton3()
     if(server->client_num >=3){
         QByteArray num1 = "1";
         server->exitDescriptList.replace(2,num1);
-        //받은다음.spinboxnum을,0으로바꿔야한다.
     }
 }
