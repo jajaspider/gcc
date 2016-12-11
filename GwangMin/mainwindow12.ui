@@ -17,24 +17,37 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>50</y>
-      <width>113</width>
-      <height>25</height>
+      <x>472</x>
+      <y>430</y>
+      <width>141</width>
+      <height>61</height>
      </rect>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>50</y>
+      <x>640</x>
+      <y>430</y>
       <width>89</width>
-      <height>25</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>로그인</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>80</y>
+      <width>54</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
     </property>
    </widget>
   </widget>
@@ -44,7 +57,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>

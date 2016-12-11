@@ -79,7 +79,7 @@ void MainWindow::readMessage(){
 
 void MainWindow::connectToServer(){
     //서버 연결 요청
-    tcpSocket.connectToHost("113.198.236.95", 9989);
+    tcpSocket.connectToHost("113.198.235.233", 9989);
 }
 
 void MainWindow::onConnectServer(){
@@ -112,7 +112,7 @@ void MainWindow::changeEvent(QEvent *e)
 }
 
 void MainWindow::reboot()
-{
+{/*
     pid_t pid;
     pid = fork();
     if(pid == 0)
@@ -129,6 +129,7 @@ void MainWindow::reboot()
     {
         qDebug("fork failed");
     }
+    */
 }
 
 void MainWindow::processKill(int number)

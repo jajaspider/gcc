@@ -6,6 +6,12 @@ MainWindow12::MainWindow12(QWidget *parent) :
     ui(new Ui::MainWindow12)
 {
     ui->setupUi(this);
+    QString img_path = "./deu.jpg";
+    QImage img(img_path);
+    QPixmap buf = QPixmap::fromImage(img);
+
+    ui->label->setPixmap(buf);
+    ui->label->resize(buf.width(), buf.height());
 }
 
 MainWindow12::~MainWindow12()
