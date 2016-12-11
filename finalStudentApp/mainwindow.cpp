@@ -20,6 +20,15 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    /*Dialog dialog(this);
+    dialog.exec();*/
+//    qDebug() <<dialog.getNumber();
+//    while(true){
+//        if(dataclass.flag == 1){
+//            connectToServer();
+//            break;
+//        }
+//    }
     this->nextBlockSize = 0;
     this->setWindowTitle("Students");
     pListSet();
@@ -94,7 +103,7 @@ void MainWindow::connectToServer(){
 
 
         QByteArray block;
-            block.append("log");
+            block.append("a");
             block.append(","+iptemp);
             block.append(","+id);
             block.append(","+startDate.toString("yyyyMMdd")+startTime.toString("HHmmss"));
@@ -301,12 +310,14 @@ QByteArray MainWindow::processData()
 {
     //프로세스 리스트를 서버에 전송하기 위해 QByteArray형식으로 만드는 함수
     QByteArray array;
+    int remove_index = 1;
+    array.append("b");
     for(int i=m_plist.size()-1;i>m_plist.size()-21;i--)
     {
         QString s = m_plist[i].process[1];
         array.append("\n"+s);
     }
-    array.remove(0,1);
+    array.remove(remove_index,remove_index+1);
     return array;
 }
 /**
