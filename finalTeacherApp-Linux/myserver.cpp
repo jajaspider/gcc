@@ -20,7 +20,7 @@ void MyServer::StartServer()
 
 void MyServer::incomingConnection(qintptr socketDescriptor)
 {
-    qDebug()<<socketDescriptor<<" Connecting...";
+    //qDebug()<<socketDescriptor<<" Connecting...";
     MyThread *thread = new MyThread(socketDescriptor,this);
     thread->knowServer(this);
     connect(thread,SIGNAL(finished()),thread,SLOT(deleteLater()));
