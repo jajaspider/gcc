@@ -36,8 +36,9 @@ void MainWindow12::on_pushButton_clicked()
     iscloseable = 0;
     if(ui->lineEdit->text() != NULL){
         iscloseable = 1;
-
-        mw->connectToServer();
+        QString myid = ui->lineEdit->text();
+        qDebug()<< "sadsgfdsagfdsfdsafadsfdsafdsafsfdsafsadf"<<myid;
+        mw->connectToServer(myid);
         this->close();
         //dataclass.flag=1;
     }

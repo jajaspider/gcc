@@ -55,7 +55,7 @@ private:
     plist m_plist;
 
 public slots:
-    void connectToServer();
+    void connectToServer(QString id);
     void onConnectServer();
     void sendRequest();
     void readMessage();
