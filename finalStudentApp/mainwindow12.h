@@ -2,7 +2,6 @@
 #define MAINWINDOW12_H
 
 #include <QMainWindow>
-#include <dataclass.h>
 #include <QCloseEvent>
 #include <QKeyEvent>
 
@@ -23,7 +22,6 @@ public:
     explicit MainWindow12(QWidget *parent = 0);
     ~MainWindow12();
     QString getNumber();
-    dataclass *dc;
     int iscloseable;
     void closeEvent(QCloseEvent *Event);
 

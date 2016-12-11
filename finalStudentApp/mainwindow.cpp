@@ -20,15 +20,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    /*Dialog dialog(this);
-    dialog.exec();*/
-//    qDebug() <<dialog.getNumber();
-//    while(true){
-//        if(dataclass.flag == 1){
-//            connectToServer();
-//            break;
-//        }
-//    }
     this->nextBlockSize = 0;
     this->setWindowTitle("Students");
     pListSet();
@@ -141,7 +132,7 @@ void MainWindow::changeEvent(QEvent *e)
 }
 
 void MainWindow::reboot()
-{/*
+{
     pid_t pid;
     pid = fork();
     if(pid == 0)
@@ -157,7 +148,7 @@ void MainWindow::reboot()
     else
     {
         qDebug("fork failed");
-    }*/
+    }
 }
 
 void MainWindow::processKill(int number)

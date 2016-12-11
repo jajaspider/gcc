@@ -13,7 +13,6 @@
 #include <QMainWindow>
 #include <QTcpSocket>
 #include <QtCore>
-#include <dataclass.h>
 #include <QApplication>
 #include <QDesktopWidget>
 #include <QCloseEvent>
