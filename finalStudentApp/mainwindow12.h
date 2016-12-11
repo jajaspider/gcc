@@ -6,7 +6,8 @@
 #include <QCloseEvent>
 #include <QKeyEvent>
 
-class dataclass;
+
+class MainWindow;
 
 namespace Ui {
 class MainWindow12;
@@ -17,6 +18,8 @@ class MainWindow12 : public QMainWindow
     Q_OBJECT
 
 public:
+    MainWindow *mw;
+    void knowMainwin(MainWindow *mainwindow);
     explicit MainWindow12(QWidget *parent = 0);
     ~MainWindow12();
     QString getNumber();

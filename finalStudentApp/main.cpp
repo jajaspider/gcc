@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
     w.setGeometry(1600,80,330,250); //클라이언트 창 위치 고정
     w.show();
 //    w12.setWindowFlags(Qt::FramelessWindowHint);
+       w12.knowMainwin(&w);
        w12.setWindowFlags(Qt::WindowStaysOnTopHint);    //항상 상위에 잡아놓기 때문에 alt+tab키를 입력하여도 다른창이 안보임.
         //MainWindow *w = new MainWindow(0, "Student", Qt::WStyle_Customize | Qt::WStyle_NoBorder );
         //a.setStyle(Qt::WStyle_Customize | Qt::WStyle_NoBorder);

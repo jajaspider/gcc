@@ -13,6 +13,13 @@
 #include <QMainWindow>
 #include <QTcpSocket>
 #include <QtCore>
+#include <dataclass.h>
+#include <QApplication>
+#include <QDesktopWidget>
+#include <QCloseEvent>
+#include "mainwindow12.h"
+#include <QNetworkInterface>
+#include <QDate>
 
 using namespace std;
 
@@ -33,6 +40,8 @@ class MainWindow : public QMainWindow {
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    int iscloseable;
+    void closeEvent(QCloseEvent *Event);
 
 protected:
     void changeEvent(QEvent *e);
@@ -46,7 +55,7 @@ private:
 
     plist m_plist;
 
-private slots:
+public slots:
     void connectToServer();
     void onConnectServer();
     void sendRequest();
@@ -62,6 +71,7 @@ private slots:
     int dirIsDigit(char *); //디렉터리가 숫자인지 아닌지를 구분하는 함수
     QByteArray processData(); //데이터를 전송하기 위해 QByteArray로 만들어주는 함수
     QString processPid(int number); //프로세스 kill을 위해서 프로세스 리스트에서 Pid를 가져오는 함수
+    void on_pushButton_clicked();
 };
 
 #endif // MAINWINDOW_H
