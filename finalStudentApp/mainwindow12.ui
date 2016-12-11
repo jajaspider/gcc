@@ -34,14 +34,14 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>로그인</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>300</y>
+      <x>360</x>
+      <y>190</y>
       <width>67</width>
       <height>17</height>
      </rect>
@@ -57,7 +57,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>
